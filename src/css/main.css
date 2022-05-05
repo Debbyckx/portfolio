@@ -317,14 +317,11 @@ li {
         display: inline-block;
         width: 10%;
     }
-    .skills-container {
-        display: inline-block;
-        width: 10%;
-    }
     .skills-title {
         font-size: 1.2vw;
     }
     .skills {
+        font-size: .9vw;
         margin: 2% 0;
         padding: 2%;
         border-radius: 5px;
