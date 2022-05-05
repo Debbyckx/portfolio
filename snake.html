@@ -11,65 +11,66 @@
     <link rel="stylesheet" href="./src/css/snake.css">
 </head>
 <body>
-    <header class="site-header sticky-top py-1">
-        <nav class="container d-flex flex-column flex-md-row justify-content-between">
-            <a class="ckx py-2 d-none d-md-inline-block" href="index.html">CKX</a>
-            <a class="py-2 d-none d-md-inline-block" href="works.html">Works</a>
-            <a class="py-2 d-none d-md-inline-block" href="./src/pdf/clerckx-deborah-cv.pdf" target="_blank">Curriculum Vitae</a>
-            <a class="py-2 d-none d-md-inline-block" href="about.html">About me</a>
-            <a class="py-2 d-none d-md-inline-block" href="contact.html">Contact</a>
-        </nav>
+    <header>
+<!--   vvv   nav   vvv    -->
+        <section class="nav-container">
+            <nav>
+                <a class="bold" href="index.html" target="_blank">CKX</a>
+                <a class="" href="#" target="_blank">Works</a>
+                <a class="" href="./src/pdf/clerckx-deborah-cv.pdf" target="_blank">Curriculum Vitae</a>
+                <a class="" href="#" target="_blank">About me</a>
+                <a class="" href="#" target="_blank">Contact</a>
+            </nav>
+        </section>
     </header>
+
     <main class="text-center">
         <section>
-            <h1 class="snake-h1">SNAKE GAME</h1>
-            <h2 class="snake-h2">still in development</h2>
-            <button class="refresh-button btn btn-success">Restart the game</button>
+            <div class="header-snake-container">
+                <h1 class="snake-h1">SNAKE GAME</h1>
+                <h2 class="snake-h2">still in development</h2>
+                <button class="btn">Restart the game</button>
+            </div>
+            <div class="canvas-snake-container">
+                <canvas id="game" width="400" height="400"></canvas>
+            </div>
         </section>
-        <canvas id="game" width="400" height="400"></canvas>
     </main>
-    <footer class="container py-5">
-        <div class="row">
-            <div class="col-12 col-md">
-                <small class="ckx d-block mb-3 text-muted">CKX</small>
-                <small class="d-block mb-3 text-muted">&copy; 2022-2023</small>
-                <small class="d-block mb-3 text-muted">made with 💚 in 🇧🇪</small>
+
+    <footer>
+        <div class="footer-container">
+            <div class="copy-container">
+                <small class="bold">CKX</small><br />
+                <small class="">&copy; 2022-2023</small><br />
+                <small class="">made with 💚 in 🇧🇪</small>
             </div>
-            <div class="col-6 col-md">
-                <h5>WEB DEV</h5>
-                <ul class="list-unstyled text-small">
-                <li><a class="link-secondary" href="#">Snake Game</a></li>
-                <li><a class="link-secondary" href="#">Rock, Paper, Scissors</a></li>
-                <li><a class="link-secondary" href="#">CRUD</a></li>
-                <li><a class="link-secondary" href="#">GTA 5 RP Server</a></li>
-                </ul>
+            <div class="dev-container">
+                <h5 class="footer-title">DEV</h5>
+                <a class="footer-link" href="#" target="_blank">Snake Game</a>
+                <a class="footer-link" href="#" target="_blank">Rock, Paper, Scissors</a>
+                <a class="footer-link" href="#" target="_blank">CRUD</a>
+                <a class="footer-link" href="#" target="_blank">GTA 5 RP Server</a>
             </div>
-            <div class="col-6 col-md">
-                <h5>WEB GRAPHIC DESIGN</h5>
-                <ul class="list-unstyled text-small">
-                <li><a class="link-secondary" href="#">Posters</a></li>
-                <li><a class="link-secondary" href="#">Texturing</a></li>
-                <li><a class="link-secondary" href="#">Twitch packages</a></li>
-                <li><a class="link-secondary" href="#">GTA hud</a></li>
-                </ul>
+            <div class="graph-container">
+                <h5 class="footer-title">GRAPHIC DESIGN</h5>
+                <a class="footer-link" href="#" target="_blank">Posters</a>
+                <a class="footer-link" href="#" target="_blank">Texturing</a>
+                <a class="footer-link" href="#" target="_blank">Twitch packages</a>
+                <a class="footer-link" href="#" target="_blank">GTA hud</a>
             </div>
-            <div class="col-6 col-md">
-                <h5>PHOTOGRAPHY</h5>
-                <ul class="list-unstyled text-small">
-                <li><a class="link-secondary" href="#">Animals</a></li>
-                <li><a class="link-secondary" href="#">Insects</a></li>
-                <li><a class="link-secondary" href="#">Landscapes</a></li>
-                <li><a class="link-secondary" href="#">Flowers</a></li>
-                </ul>
+            <div class="photo-container">
+                <h5 class="footer-title">PHOTOGRAPHY</h5>
+                <a class="footer-link" href="#" target="_blank">Animals</a>
+                <a class="footer-link" href="#" target="_blank">Insects</a>
+                <a class="footer-link" href="#" target="_blank">Landscapes</a>
+                <a class="footer-link" href="#" target="_blank">Flowers</a>
             </div>
-            <div class="col-6 col-md">
-                <h5>CONTACT</h5>
-                <ul class="list-unstyled text-small">
-                    <li><img src="./src/img/contact.png" alt="link to the curriculum vitae in pdf"><a class="link-secondary" href="contact.html"><span class="bold green"> > Work together</span></a></li>
-                    <li><img src="./src/img/cv.png" alt="link to the curriculum vitae in pdf"><a class="link-secondary" href="#"> Curriculum Vitae</a></li>
-                    <li><img src="./src/img/link.png" alt="link to linkedin"><a class="link-secondary" href="https://www.linkedin.com/in/d%C3%A9borah-clerckx-0199a080/"> Linkedin</a></li>
-                    <li><img src="./src/img/github.png" alt="link to github"><a class="link-secondary" href="https://github.com/Debbyckx"> Github</a></li>
-                </ul>
+            <div class="contact-container">
+                <h5 class="footer-title">CONTACT</h5>
+                <a class="footer-link" href="#">Contact me</a>
+                <a class="footer-link" href="./src/pdf/clerckx-deborah-cv.pdf" target="_blank">Curriculum Vitae</a>
+                <a class="footer-link" href="https://www.linkedin.com/in/d%C3%A9borah-clerckx-0199a080/">Linkedin</a>
+                <a class="footer-link" href="https://github.com/Debbyckx">Github</a>
             </div>
         </div>
     </footer>
